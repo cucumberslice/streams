@@ -1,8 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const PageOne = () => {
-    return <div>PageONe</div>
+    return (   
+        <div>
+            PageONe
+            <Link to='/pageTwo'>Navigate to page PageTwo</Link>
+        </div>)
 }
 
 
@@ -10,6 +14,8 @@ const PageTwo = () => {
     return <div>
                 PageTwo
                 <button>click Me</button>
+                <Link to='/'>Navigate to page PageOne</Link>
+
             </div>
 }
 const App = () => {

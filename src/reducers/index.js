@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form'
 
 import authReducer from './authReducer'
-import streamReducer from './streamRedcer'
+import streamReducer from './streamReducer'
 
 export default combineReducers({
     //dummy data just to get rid of the error messages
